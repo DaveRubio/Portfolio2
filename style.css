@@ -884,10 +884,7 @@ section {
         font-size: 9px;
     }
 
-    .mobile-stat:nth-child(2) {
-        transform: translateX(265 px);
-        /* adjust until it matches Samsung */
-    }
+  
 }
 
 
@@ -909,7 +906,13 @@ section {
             transform: translate(0px, 100px);
     
         }
+
+        .hero-headline-group {
+        top: 62%;
+    }
 }
+
+
 
 @media(max-width: 375px) {
     #heroImg {

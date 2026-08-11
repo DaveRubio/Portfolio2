@@ -132,15 +132,15 @@ a {
      then crossfades the last few percent to hand off to the badge. */
 .hero-word {
     position: fixed;
-    left: 1%;
+    left: 50%;
     top: 32%;
     transform: translate(-50%, -50%);
     font-family: "Outfit", sans-serif;
     font-weight: 800;
-    font-size: min(33vw, 900px);
+    font-size: min(35vw, 980px);
     color: var(--gold);
     opacity: 0.92;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.03em;
     white-space: nowrap;
     z-index: 5;
     pointer-events: none;

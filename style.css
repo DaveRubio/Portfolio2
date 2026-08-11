@@ -858,6 +858,7 @@ section {
         bottom: 16px;
         font-size: 12px;
     }
+
 }
 
 @media (min-width: 412px) and (max-width: 480px) {
@@ -928,7 +929,7 @@ section {
     }
 
     .hero-headline-group {
-        top: 62%;
+        top: 75%;
     }
 
 
@@ -946,7 +947,7 @@ section {
     }
 
     .hero-headline-group {
-        top: 63%;
+        top: 72%;
         width: 92vw;
     }
 

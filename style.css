@@ -912,6 +912,17 @@ section {
     }
 }
 
+@media(max-width: 385px) {
+
+    .hero-headline-group {
+            top: 75%;
+
+    }
+
+}
+
+
+
 
 
 @media(max-width: 375px) {

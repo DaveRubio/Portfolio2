@@ -134,8 +134,8 @@
           const word = heroWord.getBoundingClientRect();
           const wordCenterX = word.left + word.width / 2;
           const wordCenterY = word.top + word.height / 2;
-          const targetX = 70;
-          const targetY = 49;
+          const targetX = 68.5;
+          const targetY = 48.5;
           const scale = Math.max(10 / word.height, 0.03);
           return { x: Math.round(targetX - wordCenterX), y: Math.round(targetY - wordCenterY), scale };
         }

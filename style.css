@@ -109,7 +109,7 @@ a {
     gap: 2px;
     font-family: "Outfit", sans-serif;
     font-weight: 800;
-    font-size: 19px;
+    font-size: 20px;
     color: var(--gold);
     padding: 8px 14px;
     border-radius: 3px;
@@ -132,12 +132,12 @@ a {
      then crossfades the last few percent to hand off to the badge. */
 .hero-word {
     position: fixed;
-    left: 50%;
-    top: 32%;
+    left: calc(50% - 18px);
+    top: 34%;
     transform: translate(-50%, -50%);
     font-family: "Outfit", sans-serif;
     font-weight: 800;
-    font-size: min(35vw, 980px);
+    font-size: min(36vw, 1080px);
     color: var(--gold);
     opacity: 0.92;
     letter-spacing: -0.03em;
@@ -546,13 +546,13 @@ a {
     font-size: 13px;
     }
 
-                .mobile-nav-cta {
-                    font-size: 14px;
-                }
+    .mobile-nav-cta {
+    font-size: 14px;
+    }
 
-                .mobile-nav-cta-secondary {
-                    font-size: 14px;
-                }
+    .mobile-nav-cta-secondary {
+     font-size: 14px;
+    }
 }
 
 /* ============ CONTENT AREA ============ */
@@ -817,49 +817,40 @@ section {
         font-size: 13.5px;
     }
 
-    .mobile-hero-stats {
-        top: 88px;
-        left: 14px;
-        gap: 10px;
-        z-index: 13;
-    }
+  .mobile-hero-stats {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 13;
+      pointer-events: none;
+      transform: translate(0px, 70px);
+  }
 
-    .mobile-stat {
-        position: relative;
-        top: 270px;
-        /* Move down */
-        left: 0%;
-        /* Move right */
+  .mobile-stat:first-child {
+      position: absolute;
+      left: 14px;
+      top: 270px;
+      transform: none;
+  }
 
-        padding: 10px 10px;
-        z-index: 13;
-
-    }
-
-    .mobile-stat .n {
-        font-size: 25px;
-    }
-
-    .mobile-stat .l {
-        font-size: 10px;
-    }
-
-
-
-    /* Second stat */
-    .mobile-stat:nth-child(2) {
-        transform: translateX(270px);
-        position: relative;
-        top: 150px;
-
-    }
+  .mobile-stat:nth-child(2) {
+      position: absolute;
+      right: 14px;
+      left: auto;
+      top: 150px;
+      transform: none;
+  }
 
     /* iPhone 14 Pro Max and similar */
     @media (min-width: 421px) and (max-width: 480px) {
-        .mobile-stat:nth-child(2) {
-            transform: translateX(288px);
-            /* adjust until it matches Samsung */
+
+        .mobile-hero-stats {
+
+            transform: translate(0px, 180px);
+
         }
+        
     }
 
     .mobile-caption {
@@ -869,8 +860,17 @@ section {
     }
 }
 
+@media (min-width: 412px) and (max-width: 480px) {
 
-@media(max-width: 390px) {
+    .mobile-hero-stats {
+
+        transform: translate(0px, 140px);
+
+    }
+
+}
+
+@media(max-width: 395px) {
     #heroImg {
         bottom: 220px;
     }
@@ -889,29 +889,37 @@ section {
     }
 }
 
+
+@media(max-width: 390px) {
+    #heroImg {
+        bottom: 220px;
+    }
+
+    .mobile-stat .n {
+        font-size: 20px;
+    }
+
+    .mobile-stat .l {
+        font-size: 9px;
+    }
+
+        .mobile-hero-stats {
+    
+            transform: translate(0px, 100px);
+    
+        }
+}
+
 @media(max-width: 375px) {
     #heroImg {
         bottom: 130px;
     }
 
-    .mobile-stat {
-        position: relative;
-        top: 200px;
-        /* Move down */
-        left: 0%;
-        /* Move right */
-
-        padding: 10px 10px;
-        z-index: 13;
-
-    }
-
-    .mobile-stat:nth-child(2) {
-        transform: translateX(250px);
-        position: relative;
-        top: 80px;
-
-    }
+        .mobile-hero-stats {
+    
+            transform: translate(0px, 50px);
+    
+        }
 
     .mobile-caption {
 
@@ -951,11 +959,11 @@ section {
         line-height: 1.55;
     }
 
-    .mobile-hero-stats {
-        top: 150px;
-        left: 12px;
-        gap: 8px;
-    }
+ .mobile-hero-stats {
+
+     transform: translate(0px, 65px);
+
+ }
 
     .mobile-stat {
         padding: 8px 9px;
@@ -968,12 +976,6 @@ section {
 
     .mobile-stat .l {
         font-size: 9.5px;
-    }
-
-    .mobile-stat:nth-child(2) {
-        transform: translateX(240px);
-
-
     }
 
     .mobile-caption {

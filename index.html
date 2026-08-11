@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave Anthony Rubio — Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <svg class="grain" width="100%" height="100%">
+        <filter id="n">
+            <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" />
+        </filter>
+        <rect width="100%" height="100%" filter="url(#n)" />
+    </svg>
+
+    <div class="mobile-bar">
+        <span class="mobile-logo">DAVE</span>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="#home" data-nav="home" class="mobile-nav-link">Home</a>
+        <a href="#about" data-nav="about" class="mobile-nav-link">About</a>
+        <a href="#education" data-nav="education" class="mobile-nav-link">Education</a>
+        <a href="#skills" data-nav="skills" class="mobile-nav-link">Skills</a>
+        <a href="#projects" data-nav="projects" class="mobile-nav-link">Projects</a>
+        <a href="#contact" data-nav="contact" class="mobile-nav-link">Contact</a>
+        <a href="#contact" class="mobile-nav-cta">Hire me</a>
+        <a href="assets/Dave-Rubio-Resume-Final.pdf" download="Dave_Anthony_Rubio_Resume.pdf" class="mobile-nav-cta-secondary">
+            CV / Resume
+        </a>
+    </nav>
+
+    <div class="mobile-hero-stats">
+        <div class="mobile-stat"><span class="n">10+</span><span class="l">Projects built</span></div>
+        <div class="mobile-stat"><span class="n">2+</span><span class="l">Years experience</span></div>
+    </div>
+
+    <div class="mobile-caption">
+        WordPress development & SEO.<br>
+        Clean, responsive, and built to work.
+    </div>
+    <!-- ================= MORPH LAYER =========== ====== -->
+    <aside class="morph" id="morph">
+        <span class="morph-logo" id="morphLogo">DAVE</span>
+        <p class="morph-tagline" id="morphTagline">Web application developer &amp; WordPress / SEO specialist, building
+            fast
+            and functional sites.</p>
+
+        <div class="morph-stats" id="morphStats">
+            <div class="morph-stat" id="stat1">
+                <div class="n">10+</div>
+                <div class="l">Projects built</div>
+            </div>
+            <div class="morph-stat" id="stat2">
+                <div class="n">2+</div>
+                <div class="l">Years experience</div>
+            </div>
+        </div>
+
+        <nav class="morph-links" id="morphLinks">
+            <a href="#home" data-nav="home" id="navHome">Home</a>
+            <a href="#about" data-nav="about" id="navAbout">About</a>
+            <a href="#education" data-nav="education" id="navEducation">Education</a>
+            <a href="#skills" data-nav="skills" id="navSkills">Skills</a>
+            <a href="#projects" data-nav="projects" id="navProjects">Projects</a>
+            <a href="#contact" data-nav="contact" id="navContact">Contact</a>
+        </nav>
+
+        <div class="morph-spacer"></div>
+
+        <div class="morph-socials" id="morphSocials">
+            <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 0C5.37 0 0 5.5 0 12.3c0 5.44 3.44 10.05 8.21 11.68.6.11.82-.27.82-.6v-2.1c-3.34.75-4.04-1.65-4.04-1.65-.55-1.43-1.34-1.82-1.34-1.82-1.09-.77.08-.75.08-.75 1.21.09 1.84 1.28 1.84 1.28 1.07 1.87 2.8 1.33 3.49 1.02.11-.79.42-1.33.76-1.64-2.67-.31-5.47-1.38-5.47-6.13 0-1.36.47-2.46 1.24-3.33-.12-.31-.54-1.57.12-3.28 0 0 1.01-.33 3.3 1.27a11.2 11.2 0 0 1 6 0c2.29-1.6 3.3-1.27 3.3-1.27.66 1.71.24 2.97.12 3.28.77.87 1.24 1.97 1.24 3.33 0 4.76-2.81 5.82-5.49 6.12.43.38.81 1.14.81 2.3v3.4c0 .34.22.72.83.6C20.57 22.34 24 17.73 24 12.3 24 5.5 18.63 0 12 0Z" />
+                </svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24">
+                    <path
+                        d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.19 2.24.19v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z" />
+                </svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24">
+                    <path
+                        d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.35-1.85 3.59 0 4.25 2.36 4.25 5.44v6.3ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z" />
+                </svg></a>
+        </div>
+
+        <div class="morph-email" id="morphEmail" onclick="navigator.clipboard.writeText('rubiozer0dave@gmail.com')">
+            <span>rubiozer0dave@gmail.com</span>
+        </div>
+
+        <a href="#contact" class="morph-cta" id="morphCta">Hire me</a>
+        <a href="assets/Dave-Rubio-Resume-Final.pdf" download="Dave_Anthony_Rubio_Resume.pdf" class="morph-cta-secondary"
+            id="morphCtaSecondary">
+            CV / Resume
+        </a>
+    </aside>
+
+    <!-- ================= HERO ================= -->
+    <div class="hero-word" id="heroWord" aria-hidden="true">DAVE</div>
+
+    <div class="hero-portrait" id="heroPortrait">
+        <div class="backdrop"></div>
+        <div class="hero-img-wrap">
+            <img id="heroImg" src="assets/me1.webp" alt="Dave Anthony Rubio"
+                onerror="this.replaceWith(document.getElementById('heroFallback').content.cloneNode(true))">
+        </div>
+    </div>
+
+    <div class="hero-headline-group" id="heroHeadlineGroup">
+        <p class="hero-sub">Web Developer · WordPress · SEO</p>
+        <p class="hero-tag">
+            I build fast, modern websites that look good, work smoothly, and help businesses get found online.
+        </p>
+    </div>
+
+    <div class="hero-side-note" id="heroSideNote">
+        I specialize in WordPress development and SEO, with a focus on building websites that are clean, responsive, and
+        easy to manage.
+    </div>
+    <section class="hero" id="home">
+        <div class="hero-stage"></div>
+    </section>
+
+    <template id="heroFallback">
+        <div class="hero-fallback" id="heroImg"></div>
+    </template>
+
+
+    <main class="content">
+
+        <section id="about">
+            <div class="section-head">
+                <h2 class="section-title">About Me</h2>
+                <span class="section-index">01 — Profile</span>
+            </div>
+            <div class="about-grid">
+                <div class="about-body">
+                    <p>I'm a dedicated web application developer and WordPress and SEO specialist with a passion for
+                        building
+                        fast, secure and scalable digital solutions. I specialize in developing interactive and
+                        data-driven
+                        applications using modern technologies like Vue.js, Laravel and MySQL, as well as creating and
+                        optimizing
+                        WordPress websites.</p>
+                    <p>Whether it's streamlining business processes, creating dashboards, integrating APIs or improving
+                        website
+                        visibility through SEO, I focus on delivering applications and websites that solve real-world
+                        problems and
+                        enhance user experiences.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-row"><span class="lab">Name</span><span class="val">Dave Anthony D. Rubio</span>
+                    </div>
+                    <div class="info-row"><span class="lab">Born</span><span class="val">May 25, 2002</span></div>
+                    <div class="info-row"><span class="lab">Address</span><span class="val">Panabo City, Davao del
+                            Norte,
+                            Philippines</span></div>
+                    <div class="info-row"><span class="lab">Zip code</span><span class="val">8105</span></div>
+                    <div class="info-row"><span class="lab">Email</span><span class="val">rubiozer0dave@gmail.com</span>
+                    </div>
+                    <div class="info-row"><span class="lab">Phone</span><span class="val">0995 971 8479</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="section-head reveal">
+                <h2 class="section-title">My Education</h2>
+                <span class="section-index">02 — Journey</span>
+            </div>
+            <div class="edu-grid reveal">
+                <div class="edu-card">
+                    <div class="jc-year">2021–25</div>
+                    <div class="jc-title">Bachelor of Science in Information Technology</div>
+                    <div class="jc-inst">Davao Del Norte State College</div>
+                    <p class="jc-desc">Specialized in software development and database management. Developed a capstone
+                        project
+                        on rice nutrient deficiency detection using machine learning.</p>
+                </div>
+                <div class="edu-card">
+                    <div class="jc-year">2019–21</div>
+                    <div class="jc-title">Senior High School — ICT Strand</div>
+                    <div class="jc-inst">Northlink Technological College</div>
+                    <p class="jc-desc">Focused on programming fundamentals, computer systems servicing and multimedia
+                        arts.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="section-head reveal">
+                <h2 class="section-title">My Skills</h2>
+                <span class="section-index">03 — Craft</span>
+            </div>
+            <p class="section-lead reveal">Gained through study, projects and hands-on experience — and always growing.
+            </p>
+            <div class="skills-grid reveal">
+                <div>
+                    <div class="skill">
+                        <div class="skill-top"><span class="skill-name">WordPress (Divi / Elementor)</span><span
+                                class="skill-pct">90%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-pct="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-top"><span class="skill-name">On Page SEO</span><span
+                                class="skill-pct">70%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-pct="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-top"><span class="skill-name">Off Page SEO</span><span
+                                class="skill-pct">60%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-pct="60"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-top"><span class="skill-name">Technical SEO</span><span
+                                class="skill-pct">90%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-pct="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-top"><span class="skill-name">PHP / Laravel</span><span
+                                class="skill-pct">80%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-pct="80"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="skill">
+                        <div class="skill-top"><span class="skill-name">Vue.js / Quasar</span><span
+                                class="skill-pct">60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-pct="60"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-top"><span class="skill-name">MySQL</span><span class="skill-pct">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-pct="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-top"><span class="skill-name">Problem solving</span><span
+                                class="skill-pct">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-pct="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-top"><span class="skill-name">UI / UX design</span><span
+                                class="skill-pct">75%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-pct="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-top"><span class="skill-name">Image data analysis</span><span
+                                class="skill-pct">60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-pct="60"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="section-head reveal">
+                <h2 class="section-title">My Projects</h2>
+                <span class="section-index">04 — Selected work</span>
+            </div>
+            <p class="section-lead reveal">A showcase of the projects I have worked on, highlighting my skills and
+                expertise.</p>
+        
+            <div class="hproj-pin">
+                <div class="hproj-track" id="hprojTrack">
+        
+                    <div class="hproj-card">
+                        <div class="hproj-media">
+                            <div class="proj-img p1"></div>
+                        </div>
+                        <div class="hproj-footer">
+                            <div>
+                                <div class="hproj-name">Tonmor</div>
+                                <p class="hproj-desc">
+                                    WordPress — a custom business website for an aquatic engineering and construction company, built around its
+                                    services, portfolio, and lead generation.
+                                </p>
+                            </div>
+                            <a href="https://tonmor.com" class="hproj-explore" target="_blank" rel="noopener noreferrer">
+                                Explore project →
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="hproj-card">
+                        <div class="hproj-media">
+                            <div class="proj-img p2"></div>
+                            
+                        </div>
+                        <div class="hproj-footer">
+                        <div>
+                            <div class="hproj-name">Southern Pool Designs</div>
+                            <p class="hproj-desc">
+                                WordPress — a custom luxury pool builder website designed to showcase high-end projects, services, and a
+                                design-first process, with a strong focus on SEO and local search.
+                            </p>
+                        </div>
+                            <a href="https://southernpooldesigns.com" class="hproj-explore" target="_blank" rel="noopener noreferrer">
+                                Explore project →
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="hproj-card">
+                        <div class="hproj-media">
+                            <div class="proj-img p3"></div>
+                            
+                        </div>
+                        <div class="hproj-footer">
+                            <div>
+                                <div class="hproj-name">Southern Pool Care</div>
+                                <p class="hproj-desc">
+                                    WordPress — a luxury pool care website focused on maintenance, repairs, restoration, and upgrades, built to
+                                    showcase the brand’s premium service and generate service inquiries.
+                                </p>
+                            </div>
+                            <a href="https://southernpoolcare.com" class="hproj-explore" target="_blank" rel="noopener noreferrer">
+                                Explore project →
+                            </a>
+                        </div>
+                    </div>
+        
+                    <div class="hproj-card">
+                        <div class="hproj-media">
+                            <div class="proj-img p4"></div>
+                        </div>
+                        <div class="hproj-footer">
+                            <div>
+                                <div class="hproj-name">BusinessForCash</div>
+                                <p class="hproj-desc">
+                                    Web Development — a business marketplace website designed for browsing listings, viewing business details, and
+                                    connecting buyers with sellers.
+                                </p>
+                            </div>
+                            <a href="#" class="hproj-explore">Explore project →</a>
+                        </div>
+                    </div>
+
+                    <div class="hproj-card">
+                        <div class="hproj-media">
+                            <div class="proj-img p5"></div>
+                        </div>
+                        <div class="hproj-footer">
+                        <div>
+                            <div class="hproj-name">Raliegh Grantham Realtor</div>
+                            <p class="hproj-desc">
+                                WordPress — a personal real estate website built to showcase an agent’s services, property listings,
+                                testimonials, and local expertise in Ashland, Oregon.
+                            </p>
+                        </div>
+                            <a href="https://ralieghrealtor.com/" class="hproj-explore" target="_blank" rel="noopener noreferrer">
+                                Explore project →
+                            </a>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="section-head reveal">
+                <h2 class="section-title">Contact Me</h2>
+                <span class="section-index">05 — Get in touch</span>
+            </div>
+            <p class="contact-lead reveal">Let's work together. Reach out for collaborations, freelance work, or any
+                questions
+                you might have.</p>
+            <div class="contact-grid reveal">
+                <div class="c-card">
+                    <div class="lab">Contact number</div><a class="val" href="tel:+639959718479">0995 971 8479</a>
+                </div>
+                <div class="c-card">
+                    <div class="lab">Email address</div><a class="val"
+                        href="mailto:rubiozer0dave@gmail.com">rubiozer0dave@gmail.com</a>
+                </div>
+                <div class="c-card">
+                    <div class="lab">Website</div><a class="val" href="https://daverubio.github.io/dav-portfolio/"
+                        target="_blank">daverubio.github.io</a>
+                </div>
+                <div class="c-card">
+                    <div class="lab">Availability</div><span class="val">Open for freelance</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="foot-bottom">
+                <span>&copy; 2026 Dave Anthony Rubio</span>
+                <span>Built with care, line by line</span>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

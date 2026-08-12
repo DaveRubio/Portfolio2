@@ -969,18 +969,18 @@ section {
 
 @media(max-width: 375px) {
     #heroImg {
-        bottom: 130px;
+        bottom: 80px;
     }
 
-        .mobile-hero-stats {
+    .mobile-hero-stats {
     
-            transform: translate(0px, 50px);
+    transform: translate(0px, 50px);
     
-        }
+    }
 
     .mobile-caption {
 
-        bottom: 10px;
+    bottom: 10px;
 
     }
 

@@ -770,9 +770,18 @@ section {
     .hero-headline-group {
         position: absolute;
     }
+    
+         .hero-word {
+
+            top: 30%;
+            left: calc(50% - 5px);
+        
+
+         }
+
 
     .hero-portrait {
-        width: min(85vw, 480px);
+        width: min(85vw, 680px);
         top: 4%;
     }
 
@@ -781,8 +790,41 @@ section {
     }
 
     .hero-headline-group {
-        top: 58%;
+        top: 80%;
     }
+
+        .mobile-hero-stats {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 13;
+            pointer-events: none;
+            transform: translate(0px, 250px);
+        }
+    
+        .mobile-stat:first-child {
+            position: absolute;
+            left: 60px;
+            top: 270px;
+            transform: none;
+        }
+    
+        .mobile-stat:nth-child(2) {
+            position: absolute;
+            right: 60px;
+            left: auto;
+            top: 150px;
+            transform: none;
+        }
+
+                   .mobile-caption {
+                       
+                       bottom: -60px;
+                       
+                   }
+
+
 }
 
 /* Standard phones (most iPhones, most Android) — the word/portrait

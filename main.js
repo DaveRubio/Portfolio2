@@ -484,3 +484,5 @@
 
       updateHeroImage();
       window.addEventListener("resize", updateHeroImage);
+
+      alert(window.innerWidth);

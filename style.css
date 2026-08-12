@@ -969,7 +969,7 @@ section {
 
 @media(max-width: 375px) {
     #heroImg {
-        bottom: 80px;
+        bottom: 75px;
     }
 
     .mobile-hero-stats {
